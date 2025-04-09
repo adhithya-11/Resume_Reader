@@ -4,7 +4,7 @@ import json
 from sentence_transformers import SentenceTransformer, util
 
 # Load model once
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("all-MiniLM-L6-v2", device='cpu')
 
 # Keywords for role prediction
 roles_keywords = {
